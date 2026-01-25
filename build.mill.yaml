@@ -1,0 +1,14 @@
+extends: ScalaModule
+scalaVersion: 3.8.0
+scalacOptions: [
+  -no-indent,
+  -rewrite,
+  -source:3.4-migration,
+  -Wunused:all,
+  -deprecation,
+  -feature,
+  -Xmax-inlines,
+  64
+]
+mvnDeps:
+  - com.lihaoyi::fastparse:3.1.1

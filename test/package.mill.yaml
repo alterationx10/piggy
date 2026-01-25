@@ -1,0 +1,6 @@
+extends: [ build.ScalaTests, TestModule.Munit ]
+mvnDeps:
+  - org.scalameta::munit:1.2.1
+  - org.postgresql:postgresql:42.7.9
+  - io.zonky.test:embedded-postgres:2.2.0
+  - io.zonky.test.postgres:embedded-postgres-binaries-darwin-arm64v8:18.1.0
