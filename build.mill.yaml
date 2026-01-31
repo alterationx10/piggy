@@ -1,5 +1,19 @@
-extends: ScalaModule
+extends: [ ScalaModule, SonatypeCentralPublishModule ]
 scalaVersion: 3.8.0
+jvmVersion: temurin:25
+publishVersion: 0.0.15
+artifactName: piggy
+pomSettings:
+  description: A Scala library for working with SQL via java.sql
+  organization: dev.alteration
+  url: https://github.com/alterationx10/piggy
+  licenses: [ Apache 2 ]
+  versionControl: https://github.com/alterationx10/piggy
+  developers:
+    - id: alterationx10
+      name: Mark Rudolph
+      email: mark@alteration.dev
+      url: https://github.com/alterationx10
 scalacOptions: [
   -no-indent,
   -rewrite,
